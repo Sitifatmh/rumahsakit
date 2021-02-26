@@ -1,0 +1,49 @@
+extends layout
+block content
+    header
+        .headertext Rumah Sakit
+    judul
+    .judultext List Pasien
+    button 
+     a(href='pasien/create' class="tambah") Tambah Pasien
+    center  
+        .data-table(align='center')
+        table(style='width: 80%; border:1px solid black;' rules='all')
+    
+            tr(style='background-color:  #4F89FA;')
+                th 
+                    |   No
+                th 
+                    |   Tanggal
+                th 
+                    |   Nama
+                th 
+                    |   Alamat
+                th 
+                    |    Diagnosa
+                th 
+                    |     Obat
+                th 
+                    |     Dokter
+                th 
+                    |     Kamar
+                th 
+                    |     Aksi
+            for row, index in data
+                tr
+                    td #{index + 1}
+                    td #{row.tanggal}
+                    td #{row.name}
+                    td #{row.address}
+                    td #{row.diagnosa}
+                    td #{row.obat}
+                    td #{row.dokter}
+                    td #{row.kamar}
+                    td
+                        form(action=`/pasien/${row.id}?_method=DELETE`, method="post")
+                            input(type="submit", value="Hapus")
+                            a(href=`/pasien/${row.id}/edit`) Edit
+            br
+            
+
+

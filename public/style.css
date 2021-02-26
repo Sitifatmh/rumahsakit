@@ -1,0 +1,48 @@
+html{
+    background-color:white;
+    color:black;
+}
+header{
+    background-color:  #4F89FA;
+    color: white;
+    padding: 12px 3px;
+    font-size: 30px;
+    text-align: left;
+}
+.headertext{
+    margin-left: 130px;
+}
+.judultext{
+    margin-top: 10px;
+    font-size: 30px; 
+    margin-bottom: 5px;
+    width: 80%;
+   margin-left: 130px;
+}
+button{
+    font-size: 20px; 
+    margin-left: 130px;
+    margin-bottom: 5px;
+    border: none;
+    background-color: #4F89FA;
+    padding: 7px 7px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.tambah{
+    text-decoration: none;
+    color:white;
+}
+.create{
+    background-color:  #4F89FA;
+    color: white;
+    padding: 12px 3px;
+    font-size: 30px;
+    text-align: left;
+}
+.createtext{
+    margin-left: 130px;
+}
+
+
+
